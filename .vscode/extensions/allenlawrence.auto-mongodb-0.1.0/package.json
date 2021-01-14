@@ -1,0 +1,99 @@
+{
+	"name": "auto-mongodb",
+	"displayName": "Auto MongoDB",
+	"icon": "asset/logo.png",
+	"description": "One click to run MongoDB without installation or configuration",
+	"version": "0.1.0",
+	"publisher": "AllenLawrence",
+	"repository": "https://github.com/BlueSky1997AL/mongodb-vscode-ext",
+	"engines": {
+		"vscode": "^1.23.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.showMenu",
+				"title": "Show Main Menu"
+			}
+		],
+		"configuration": {
+			"title": "Auto MongoDB 配置 (修改后需重启数据库)",
+			"properties": {
+				"autoMongoDB.instance.port": {
+					"description": "数据库运行端口。",
+					"type": "number",
+					"default": 27017
+				},
+				"autoMongoDB.instance.dbPath": {
+					"description": "数据库文件存储路径。 默认存储位置：~/.mongodb/data (POSIX)，C:\\Users\\用户名\\.mongodb\\data (Windows)。",
+					"type": "string"
+				},
+				"autoMongoDB.instance.storageEngine": {
+					"description": "数据库存储引擎模式。",
+					"type": "string",
+					"default": "ephemeralForTest"
+				},
+				"autoMongoDB.binary.version": {
+					"description": "下载安装数据库可执行文件的版本。",
+					"type": "string",
+					"default": "3.4.4"
+				},
+				"autoMongoDB.binary.downloadDir": {
+					"description": "数据库可执行文件的下载路径。默认存储位置：~/.mongodb/binaries (POSIX)，C:\\Users\\用户名\\.mongodb\\binaries (Windows)。",
+					"type": "string"
+				},
+				"autoMongoDB.binary.platform": {
+					"description": "下载安装数据库可执行文件的平台。注意：我们不推荐您修改此选项，因为我们会自动判断您的安装环境。此选项仅在需要时修改。",
+					"type": "string"
+				},
+				"autoMongoDB.binary.arch": {
+					"description": "下载安装数据库可执行文件的架构。注意：我们不推荐您修改此选项，因为我们会自动判断您的安装环境。此选项仅在需要时修改。",
+					"type": "string"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^2.6.1",
+		"vscode": "^1.1.6",
+		"@types/node": "^7.0.43",
+		"@types/mocha": "^2.2.42"
+	},
+	"dependencies": {
+		"babel-runtime": "^6.26.0",
+		"clipboardy": "^1.2.3",
+		"debug": "^3.1.0",
+		"decompress": "^4.2.0",
+		"fs-extra": "^6.0.1",
+		"get-port": "^3.2.0",
+		"getos": "^3.1.0",
+		"lockfile": "^1.0.4",
+		"md5-file": "^4.0.0",
+		"mkdirp": "^0.5.1",
+		"opn": "^5.3.0",
+		"raven": "^2.6.2",
+		"request": "^2.87.0",
+		"request-promise": "^4.2.2",
+		"tmp": "0.0.33",
+		"uuid": "^3.2.1"
+	},
+	"__metadata": {
+		"id": "b4e70dc8-d8df-4a89-9d2a-2ecadbbcd014",
+		"publisherId": "39eabf88-ac36-4a1f-8dda-9dbe05732f8d",
+		"publisherDisplayName": "Allen Lawrence"
+	}
+}

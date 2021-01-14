@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="22" failures="0" errors="0" time="5.748">
+  <testsuite name="Webview Store Test Suite" errors="0" failures="0" skipped="0" timestamp="2020-10-19T16:22:52" time="1.66" tests="1">
+    <testcase classname="Webview Store Test Suite ensure the state updates on an action call" name="Webview Store Test Suite ensure the state updates on an action call" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="Connection Status Component Test Suite" errors="0" failures="0" skipped="0" timestamp="2020-10-19T16:22:52" time="1.814" tests="7">
+    <testcase classname="Connection Status Component Test Suite connected connection status it shows that it is connected to the connection name" name="Connection Status Component Test Suite connected connection status it shows that it is connected to the connection name" time="0.006">
+    </testcase>
+    <testcase classname="Connection Status Component Test Suite connected connection status it shows a create playground button" name="Connection Status Component Test Suite connected connection status it shows a create playground button" time="0.003">
+    </testcase>
+    <testcase classname="Connection Status Component Test Suite disconnected it shows a disconnect message" name="Connection Status Component Test Suite disconnected it shows a disconnect message" time="0.001">
+    </testcase>
+    <testcase classname="Connection Status Component Test Suite disconnected it does not show a create playground button" name="Connection Status Component Test Suite disconnected it does not show a create playground button" time="0.001">
+    </testcase>
+    <testcase classname="Connection Status Component Test Suite connecting it shows a connecting message" name="Connection Status Component Test Suite connecting it shows a connecting message" time="0.001">
+    </testcase>
+    <testcase classname="Connection Status Component Test Suite disconnecting it shows a connecting message" name="Connection Status Component Test Suite disconnecting it shows a connecting message" time="0">
+    </testcase>
+    <testcase classname="Connection Status Component Test Suite loading it shows a loading message" name="Connection Status Component Test Suite loading it shows a loading message" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="Overview Page Component Test Suite" errors="0" failures="0" skipped="0" timestamp="2020-10-19T16:22:52" time="2.173" tests="5">
+    <testcase classname="Overview Page Component Test Suite when rendered it shows an overview header" name="Overview Page Component Test Suite when rendered it shows an overview header" time="0.026">
+    </testcase>
+    <testcase classname="Overview Page Component Test Suite when rendered it shows the connection status" name="Overview Page Component Test Suite when rendered it shows the connection status" time="0.014">
+    </testcase>
+    <testcase classname="Overview Page Component Test Suite when rendered it shows the connect helper" name="Overview Page Component Test Suite when rendered it shows the connect helper" time="0.007">
+    </testcase>
+    <testcase classname="Overview Page Component Test Suite when rendered it does not show the connect form modal" name="Overview Page Component Test Suite when rendered it does not show the connect form modal" time="0.005">
+    </testcase>
+    <testcase classname="Overview Page Component Test Suite when rendered with showConnectForm it shows the connect form" name="Overview Page Component Test Suite when rendered with showConnectForm it shows the connect form" time="0.005">
+    </testcase>
+  </testsuite>
+  <testsuite name="Webview Connection Form Component Test Suite" errors="0" failures="0" skipped="0" timestamp="2020-10-19T16:22:52" time="2.204" tests="1">
+    <testcase classname="Webview Connection Form Component Test Suite it shows a connection form" name="Webview Connection Form Component Test Suite it shows a connection form" time="0.026">
+    </testcase>
+  </testsuite>
+  <testsuite name="Connect Form Modal Component Test Suite" errors="0" failures="0" skipped="0" timestamp="2020-10-19T16:22:52" time="2.298" tests="3">
+    <testcase classname="Connect Form Modal Component Test Suite when rendered it shows the connection form" name="Connect Form Modal Component Test Suite when rendered it shows the connection form" time="0.027">
+    </testcase>
+    <testcase classname="Connect Form Modal Component Test Suite when rendered it shows a close icon" name="Connect Form Modal Component Test Suite when rendered it shows a close icon" time="0.009">
+    </testcase>
+    <testcase classname="Connect Form Modal Component Test Suite store actions when the x is clicked it closes the connect form" name="Connect Form Modal Component Test Suite store actions when the x is clicked it closes the connect form" time="0.12">
+    </testcase>
+  </testsuite>
+  <testsuite name="App Component Test Suite" errors="0" failures="0" skipped="0" timestamp="2020-10-19T16:22:52" time="2.42" tests="3">
+    <testcase classname="App Component Test Suite when passed currentView=CONNECT it shows a connection form" name="App Component Test Suite when passed currentView=CONNECT it shows a connection form" time="0.024">
+    </testcase>
+    <testcase classname="App Component Test Suite when passed currentView=CONNECT it shows a connection form" name="App Component Test Suite when passed currentView=CONNECT it shows a connection form" time="0.008">
+    </testcase>
+    <testcase classname="App Component Test Suite when the extension sends a connection status message it updates the connectionStatus in the store" name="App Component Test Suite when the extension sends a connection status message it updates the connectionStatus in the store" time="0.025">
+    </testcase>
+  </testsuite>
+  <testsuite name="Connect Helper Component Test Suite" errors="0" failures="0" skipped="0" timestamp="2020-10-19T16:22:52" time="4.026" tests="2">
+    <testcase classname="Connect Helper Component Test Suite when rendered when onOpenConnectionStringInput is clicked it posts a message to vscode to open the input" name="Connect Helper Component Test Suite when rendered when onOpenConnectionStringInput is clicked it posts a message to vscode to open the input" time="0.045">
+    </testcase>
+    <testcase classname="Connect Helper Component Test Suite when rendered when onOpenConnectionFrom is clicked it shows the connect form modal" name="Connect Helper Component Test Suite when rendered when onOpenConnectionFrom is clicked it shows the connect form modal" time="0.005">
+    </testcase>
+  </testsuite>
+</testsuites>
